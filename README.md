@@ -16,7 +16,7 @@ build a CMS-style blog site similar to a Wordpress site, where developers can pu
 
 Github: https://github.com/Strongie/Tech_Blog
 
-Heroku: 
+Heroku: https://polar-peak-49241.herokuapp.com/ 
 
 
 ## User Story
