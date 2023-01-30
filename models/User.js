@@ -29,20 +29,21 @@ User.init({
             len: [4]
         },
      },
-};
+},
+{
 hooks: {
-async beforeCreate(newUserData){
+beforeCreate: async (newUserData){
     updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
     return newUserData;
 },
-async beforeUpdate(updatedUserData){
+beforeUpdate: async (updatedUserData){
     updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
     return updatedUserData;
-}
-}
-{
+},
+},
+
 sequelize,
-timeStamp: false,
+timeStamps: false,
 freezeTableName: true,
 modelName: 'user'
 });
